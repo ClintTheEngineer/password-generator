@@ -9,3 +9,7 @@
 <li>Character set for password is dynamically generated.</li>
 <li>Compare to https://www.dashlane.com/personal-password-manager/password-generator via https://www.security.org/how-secure-is-my-password/</li>
 </ul>
+
+
+
+*Not cryptographically secure.
