@@ -43,18 +43,13 @@ if(specialCharsChoice == 'Yes' || specialCharsChoice == 'yes' || specialCharsCho
     throw new Error('Please enter Yes or No for Special Characters!')
 }
 
-
-
-     
+    
 for (let i = totalCharacterList.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [totalCharacterList[i], totalCharacterList[j]] = [totalCharacterList[j], totalCharacterList[i]];
   }
-const variableNumber = totalCharacterList.length-(maxNum+minNum)
-  if (passwordLength >= minNum && passwordLength <= maxNum) {
-    passwordLength = (maxNum - passwordLength) + minNum + variableNumber;
-  }     
-    return totalCharacterList.join('').slice(passwordLength);    
+   
+    return totalCharacterList.join('').slice(0, passwordLength)
 }
 
 console.log(passwordGenerator());
