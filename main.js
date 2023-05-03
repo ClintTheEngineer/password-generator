@@ -41,6 +41,8 @@ if(specialCharsChoice == 'Yes' || specialCharsChoice == 'yes' || specialCharsCho
     totalCharacterList = [...alphabetCharacters, ...uppercaseAlphabetCharacters, ...numbers];
 } else {
     throw new Error('Please enter Yes or No for Special Characters!')
+
+
 }
 
     
@@ -51,6 +53,6 @@ for (let i = totalCharacterList.length - 1; i > 0; i--) {
    
     return totalCharacterList.join('').slice(0, passwordLength)
 }
-
 console.log(passwordGenerator());
 
+module.exports = passwordGenerator;
